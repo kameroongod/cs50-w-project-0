@@ -75,16 +75,52 @@ h1 {
     border: none;
     padding: 1.5rem;
   }
+}
 
-  input[type="submit"] {
-    text-align: center;
-    width: 15rem;
-    height: 3.5rem;
-    border-radius: 0.25rem;
-    background-color: $body-grey;
-    border: none;
-    color: $white;
-    font-weight: 700;
-    padding: 0.25rem;
+input[type="submit"] {
+  text-align: center;
+  width: 15rem;
+  height: 3.5rem;
+  border-radius: 0.25rem;
+  background-color: $body-grey;
+  border: none;
+  color: $white;
+  font-weight: 700;
+  padding: 0.25rem;
+}
+
+.grid {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr / auto;
+  text-align: left;
+  row-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 0.45fr 1fr 0.75fr;
+
+  input {
+    width: 60rem;
+    height: 3rem;
   }
+
+  &:first-child {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  &:not(:first-child) {
+    font-size: 1.4rem;
+  }
+
+  span {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
+
+#adv-search-btn {
+  background-color: rgb(101, 101, 240);
 }

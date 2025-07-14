@@ -14,16 +14,45 @@
         <a class="active" href="advanced_search.html">Advanced Search</a>
       </nav>
     </header>
+    <h2>Advanced Search</h2>
+    <hr />
     <main>
-      <section class="text-search">
-        <h1>Google</h1>
-      </section>
-      <section class="input-form">
-        <form action="https://www.google.com/search" class="main-form">
-          <input class="search-main" type="text" name="q" />
-          <input type="submit" value="Google Search" />
-        </form>
-      </section>
+      <form action="https://www.google.com/search">
+        <div class="grid">
+          <div class="grid-row">
+            <div class="grid-col">Find pages with...</div>
+            <div class="grid-col"></div>
+            <div class="grid-col">To do this in the search field</div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-col">all of the following words:</div>
+            <div class="grid-col"><input type="text" name="as_q" /></div>
+            <div class="grid-col">Enter the important words: <span>tricolor terrier</span></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-col">this exact word or group of words:</div>
+            <div class="grid-col"><input type="text" name="as_epq" /></div>
+            <div class="grid-col">Put the exact words in quotation marks: <span>"Scottish Terrier"</span></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-col">one of the following words:</div>
+            <div class="grid-col"><input type="text" name="as_oq" /></div>
+            <div class="grid-col">
+              one of the following words: pomme ou apple Enter " OR " between
+              all words to include: <span>thumbnail OR standard</span>
+            </div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-col">none of the following words:</div>
+            <div class="grid-col"><input type="text" name="as_eq" /></div>
+            <div class="grid-col">
+              Place a minus sign in front of words to exclude: <span>- rodent, - "Jack Russell"</span>
+            </div>
+          </div>
+        </div>
+        <input id="adv-search-btn" type="submit" value="Advanced Search"></input>
+      </form>
     </main>
   </body>
 </html>
+s
