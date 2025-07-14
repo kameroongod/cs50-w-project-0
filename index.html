@@ -21,7 +21,11 @@
       <section class="input-form">
         <form action="https://www.google.com/search" class="main-form">
           <input class="search-main" type="text" name="q" />
-          <input type="submit" value="Google Search" />
+          <div class="btn-submit-main">
+            <input type="submit" value="Google Search" />
+            <!-- for input value to be passed to a form need to provide name parameter -->
+            <input type="submit" name="btnI" value="I'm feeling lucky" />
+          </div>
         </form>
       </section>
     </main>
